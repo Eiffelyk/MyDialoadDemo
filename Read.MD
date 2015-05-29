@@ -1,0 +1,5 @@
+两种等待框的实现方式，都是继承ProgressDialog，然后进行Theme自定义的。
+解决5.0之后对话框有白色背景底色的bug
+
+区别在于CustomeProgressDialog中是直接在 静态的Show进行的对话框初始化
+DialogLoad使用的是先初始化，后调用show和cancel方法进行对话框显示和取消
